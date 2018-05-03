@@ -18,5 +18,27 @@ Remplacer les fonctions anonymes par les fonctions fléchées.
 
 Remplacer l'utilisation de la librairie [`request`](https://github.com/request/request) par la librairie [`request-promise-native`](https://github.com/request/request-promise-native).
 
-Les services doivent à présents renvoyés des promesses.
+Les services doivent à présents renvoyés des promesses à la place de l'utilisation de callbacks.
+
+## Classes
+
+Utiliser des classes pour construire les structures.
+
+Exemple de structure de la classe `Service` :
+
+```js
+
+class Service {
+    
+    init() {
+        
+    }
+    
+    listerSessions() {
+        
+        // retourne une promesse
+    }
+    
+}
+```
 

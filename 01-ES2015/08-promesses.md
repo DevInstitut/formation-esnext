@@ -159,3 +159,22 @@ getId('a@a.fr')
         // gestion globale des erreurs
     });
 ```
+
+## Promise.all(iterable)
+
+La fonction `Promise.all(iterable)` :
+
+* prend en argument un `itérable`. Par exemple, un tableau de promesses.
+* retourne une promesse qui sera
+ * résolue lorsque toutes les promesses en argument seront résolues
+ * rompue si une promesse en argument est rompue
+ 
+ 
+```js
+Promise.all([promesse1$, promesse2$, promesse3$])
+.then(function(result) {
+    // traitement des résutats
+});
+```
+
+

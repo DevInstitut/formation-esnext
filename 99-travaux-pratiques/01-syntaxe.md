@@ -6,8 +6,7 @@
 
 ## Répertoire TP
 
-* Créer un répertoire _/es2015_.
-
+* Créer un répertoire _/es2015_ dans votre espace `formation-frontend`.
 * Créer un script _/es2015/app.js_.
 
 ```

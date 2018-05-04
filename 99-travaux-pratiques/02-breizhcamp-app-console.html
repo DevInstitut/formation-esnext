@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>ECMAScript 2017 · Formation ESNEXT</title>
+        <title>#2 BreizhCamp App · Formation ESNEXT</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../99-travaux-pratiques/" />
     
-    
-    <link rel="prev" href="../02-ES2016/" />
+    <link rel="prev" href="01-syntaxe.html" />
     
 
     </head>
@@ -316,9 +314,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../03-ES2017/">
             
-                <a href="./">
+                <a href="../03-ES2017/">
             
                     
                     ECMAScript 2017
@@ -329,9 +327,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../99-travaux-pratiques/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../99-travaux-pratiques/">
+                <a href="./">
             
                     
                     Travaux Pratiques
@@ -343,9 +341,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../99-travaux-pratiques/01-syntaxe.html">
+        <li class="chapter " data-level="1.5.1" data-path="01-syntaxe.html">
             
-                <a href="../99-travaux-pratiques/01-syntaxe.html">
+                <a href="01-syntaxe.html">
             
                     
                     #1 Syntaxe esnext+
@@ -356,9 +354,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../99-travaux-pratiques/02-breizhcamp-app-console.html">
+        <li class="chapter active" data-level="1.5.2" data-path="02-breizhcamp-app-console.html">
             
-                <a href="../99-travaux-pratiques/02-breizhcamp-app-console.html">
+                <a href="02-breizhcamp-app-console.html">
             
                     
                     #2 BreizhCamp App
@@ -404,7 +402,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >ECMAScript 2017</a>
+        <a href=".." >#2 BreizhCamp App</a>
     </h1>
 </div>
 
@@ -419,17 +417,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ecmascript-2017">ECMAScript 2017</h1>
-<p>Les nouveaut&#xE9;s :</p>
-<ul>
-<li>Fonctions asynchrones (<code>async</code>/<code>await</code>)</li>
-<li><code>SharedArrayBuffer</code>, <code>Atomics</code></li>
-<li>Quelques modifications mineures:<ul>
-<li><code>Object.values</code>, <code>Object.entries</code></li>
-<li>...</li>
-</ul>
-</li>
-</ul>
+                                <h1 id="2-breizhcamp-app">#2 BreizhCamp App</h1>
+<blockquote>
+<p>Objectif : migrer <a href="http://www.dev-institut.fr/formation-intro-node/03-Travaux-Pratiques/" target="_blank">l&apos;application console r&#xE9;alis&#xE9;e lors de l&apos;introduction sur Node</a> vers la syntaxe ES2015+.</p>
+</blockquote>
+<h2 id="let-const">let, const</h2>
+<p>Remplacer le mot cl&#xE9; <code>var</code> par <code>let</code> ou <code>const</code> suivant les cas.</p>
+<h2 id="template-de-string">Template de string</h2>
+<p>Remplacer les concat&#xE9;nations de cha&#xEE;nes de caract&#xE8;res par des templates de string.</p>
+<h2 id="arrow-function">Arrow function</h2>
+<p>Remplacer les fonctions anonymes par les fonctions fl&#xE9;ch&#xE9;es.</p>
+<h2 id="promesses">Promesses</h2>
+<p>Remplacer l&apos;utilisation de la librairie <a href="https://github.com/request/request" target="_blank"><code>request</code></a> par la librairie <a href="https://github.com/request/request-promise-native" target="_blank"><code>request-promise-native</code></a>.</p>
+<p>Les services doivent &#xE0; pr&#xE9;sents renvoy&#xE9;s des promesses &#xE0; la place de l&apos;utilisation de callbacks.</p>
+<h2 id="classes">Classes</h2>
+<p>Utiliser des classes pour construire les structures.</p>
+<p>Exemple de structure de la classe <code>Service</code> :</p>
+<pre><code class="lang-js">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Service</span> </span>{
+
+    init() {
+
+    }
+
+    listerSessions() {
+
+        <span class="hljs-comment">// retourne une promesse</span>
+    }
+
+}
+</code></pre>
 
                                 
                                 </section>
@@ -457,14 +474,10 @@
 
             
                 
-                <a href="../02-ES2016/" class="navigation navigation-prev " aria-label="Previous page: ECMAScript 2016">
+                <a href="01-syntaxe.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: #1 Syntaxe esnext+">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="../99-travaux-pratiques/" class="navigation navigation-next " aria-label="Next page: Travaux Pratiques">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -473,7 +486,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ECMAScript 2017","level":"1.4","depth":1,"next":{"title":"Travaux Pratiques","level":"1.5","depth":1,"path":"99-travaux-pratiques/README.md","ref":"99-travaux-pratiques/README.md","articles":[{"title":"#1 Syntaxe esnext+","level":"1.5.1","depth":2,"path":"99-travaux-pratiques/01-syntaxe.md","ref":"99-travaux-pratiques/01-syntaxe.md","articles":[]},{"title":"#2 BreizhCamp App","level":"1.5.2","depth":2,"path":"99-travaux-pratiques/02-breizhcamp-app-console.md","ref":"99-travaux-pratiques/02-breizhcamp-app-console.md","articles":[]}]},"previous":{"title":"ECMAScript 2016","level":"1.3","depth":1,"path":"02-ES2016/README.md","ref":"02-ES2016/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-esnext","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation ESNEXT","gitbook":"*"},"file":{"path":"03-ES2017/README.md","mtime":"2018-05-04T08:12:17.787Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-04T08:15:05.356Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"#2 BreizhCamp App","level":"1.5.2","depth":2,"previous":{"title":"#1 Syntaxe esnext+","level":"1.5.1","depth":2,"path":"99-travaux-pratiques/01-syntaxe.md","ref":"99-travaux-pratiques/01-syntaxe.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-esnext","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation ESNEXT","gitbook":"*"},"file":{"path":"99-travaux-pratiques/02-breizhcamp-app-console.md","mtime":"2018-05-04T08:12:17.787Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-04T08:15:05.356Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -16,3 +16,5 @@
 * [ECMAScript 2016](02-ES2016/README.md)
 * [ECMAScript 2017](03-ES2017/README.md)
 * [Travaux Pratiques](99-travaux-pratiques/README.md)
+  * [#1 Syntaxe esnext+](99-travaux-pratiques/01-syntaxe.md)
+  * [#2 BreizhCamp App](99-travaux-pratiques/02-breizhcamp-app-console.md)
